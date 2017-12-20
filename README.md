@@ -1,2 +1,2 @@
-This is a application for The Rails Tutorial by Michael Hartl
+This is an application for The Rails Tutorial by Michael Hartl
 	Made by Izabard;
