@@ -48,7 +48,11 @@ class UsersController < ApplicationController
   end
 
   def index
+<<<<<<< HEAD
     @users = User.where(activated: true).paginate(page: params[:page])
+=======
+    @users = User.paginate(page: params[:page])
+>>>>>>> account-activation
   end
 
   def user_params
