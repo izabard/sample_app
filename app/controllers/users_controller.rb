@@ -34,7 +34,7 @@ class UsersController < ApplicationController
     else
       render 'edit'
     end
-    
+
   end
 
   def destroy
@@ -48,15 +48,11 @@ class UsersController < ApplicationController
   end
 
   def index
-<<<<<<< HEAD
     @users = User.where(activated: true).paginate(page: params[:page])
-=======
-    @users = User.paginate(page: params[:page])
->>>>>>> account-activation
   end
 
   def user_params
-  	params.require(:user).permit(:name, :email, :password, 
+  	params.require(:user).permit(:name, :email, :password,
   								 :password_confirmation)
   end
 
@@ -67,12 +63,12 @@ class UsersController < ApplicationController
       flash[:danger] = "Please log in"
       redirect_to login_url
     end
-    
+
   end
 
   def correct_user
     @user = User.find(params[:id])
     redirect_to(root_url) unless current_user?(@user)
-  end 
+  end
 
 end

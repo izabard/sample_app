@@ -5,7 +5,7 @@ User.create!(name: "User Joel",
 	admin: true,
 	activated: true,
 	activated_at: Time.zone.now)
-	
+
 
 
 99.times do |n|

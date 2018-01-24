@@ -6,7 +6,7 @@ module SessionsHelper
 	def current_user?(user)
 		user == current_user
 	end
-	
+
 	def current_user
 		if (user_id = session[:user_id])
 			@current_user ||= User.find_by(id: user_id)
@@ -17,7 +17,7 @@ module SessionsHelper
 				@current_user = user
 			end
 		end
-		
+
 	end
 
 	def logged_in?
@@ -32,7 +32,7 @@ module SessionsHelper
 
 	def log_out
 		forget(current_user)
-		session.delete(:user_id) 
+		session.delete(:user_id)
 		@current_user = nil
 	end
 

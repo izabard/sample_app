@@ -9,7 +9,9 @@ joel:
   activated_at: <%= Time.zone.now %>
 
 =======
->>>>>>> account-activation
+  activated: true
+  activated_at: <%= Time.zone.now %>
+>>>>>>> 4763728a792dcc563468368143acd1aba14106e2
 
 archer:
   name: Sterling Archer
@@ -20,7 +22,9 @@ archer:
   activated_at: <%= Time.zone.now %>
 
 =======
->>>>>>> account-activation
+  activated: true
+  activated_at: <%= Time.zone.now %>
+>>>>>>> 4763728a792dcc563468368143acd1aba14106e2
 
 lana:
   name: Lana Kane
@@ -31,7 +35,9 @@ lana:
   activated_at: <%= Time.zone.now %>
 
 =======
->>>>>>> account-activation
+  activated: true
+  activated_at: <%= Time.zone.now %>
+>>>>>>> 4763728a792dcc563468368143acd1aba14106e2
 
 
 malory:
@@ -43,7 +49,9 @@ malory:
   activated_at: <%= Time.zone.now %>
 
 =======
->>>>>>> account-activation
+  activated: true
+  activated_at: <%= Time.zone.now %>
+>>>>>>> 4763728a792dcc563468368143acd1aba14106e2
 
 <% 30.time do |n| %>
   user_<%= n %>:
@@ -55,6 +63,7 @@ malory:
     activated_at: <%= Time.zone.now %>
 
 =======
->>>>>>> account-activation
+    activated: true
+    activated_at: <%= Time.zone.now %>
+>>>>>>> 4763728a792dcc563468368143acd1aba14106e2
 <% end %>
-
